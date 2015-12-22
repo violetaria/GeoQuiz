@@ -33,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +47,11 @@
             android:id="@+id/next_button"
             android:src="@drawable/arrow_right"
             android:contentDescription="@string/next_button"/>
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheat_button"
+            android:text="@string/cheat_button"/>
     </LinearLayout>
 
 </LinearLayout>
