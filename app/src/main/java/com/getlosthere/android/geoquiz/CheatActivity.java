@@ -24,6 +24,8 @@ public class CheatActivity extends AppCompatActivity {
     private TextView mAnswerTextView;
     private Button mShowAnswer;
 
+    private TextView mApiTextView;
+
     private boolean mAnswerIsShown;
 
     private void setAnswerShownResult(boolean isAnswerShown){
@@ -48,6 +50,9 @@ public class CheatActivity extends AppCompatActivity {
             mAnswerIsShown = false;
         }
         setAnswerShownResult(mAnswerIsShown);
+
+        mApiTextView = (TextView)findViewById(R.id.apiLevelView);
+        mApiTextView.setText("API Version " + android.os.Build.VERSION.SDK_INT);
 
         mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
 
